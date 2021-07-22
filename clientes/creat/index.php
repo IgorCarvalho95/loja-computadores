@@ -14,13 +14,14 @@ if($action){
     $telefone = $_POST['telefone'];
     $endereco = $_POST['endereco'];
 
-    $ok = insert_client ($nome, $cpf, $nascimento, $email, $telefone, $endereco);
+    $result = insert_client ($nome, $cpf, $nascimento, $email, $telefone, $endereco);
     //Não lembro pq usou !=false ao invés de ==true. Tem diferença?
-    if($ok!=false) {
+    //Pq não se sabia se o retorno era um booleano.
+    if($result) {
         echo 'Cliente cadastrado com sucesso!';
     }
     else {
-        echo $ok->error;
+        echo $result;
     }
 
 }

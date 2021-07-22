@@ -10,3 +10,4 @@ if($mysqli->connect_errno){
     die("Falha na conexão com o banco de dados.");
 }
 
+$GLOBALS['db'] = $mysqli;
