@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Cadastrar Cliente</title>
+</head>
+<body>
+    <form method="POST" action="index.php?action=model">
+        <fieldset class="grupo">
+            <h2 id="titulo">CADASTRO DE CLIENTES</h2>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento">
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" required>
+                <label for="nome">Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+
+            <button type="button" class="botao">Success</button>
+        </fieldset>
+    </form>
+</body>
+</html>
